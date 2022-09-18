@@ -24,7 +24,8 @@ t.sleep(5)
 while i > v:
 
     q = df['qval'].iloc[v]
-    pa.write(q, interval = 0.0001)
+    pa.write(q, interval = 0.05)
     pa.press('enter')
+    print ( str(v) + ':  ' + q)
     v = v + 1
-    t.sleep(2)
+    t.sleep(3)
